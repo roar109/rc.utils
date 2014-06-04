@@ -5,7 +5,6 @@
   <groupId>org.rageco</groupId>
   <artifactId>rc-utils</artifactId>
   <version>1.0.0</version>
-  <description></description>
   
    <dependencies>
       <dependency>
