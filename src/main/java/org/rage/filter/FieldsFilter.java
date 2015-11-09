@@ -73,7 +73,7 @@ public final class FieldsFilter {
      * @param list
      * */
     private static <T> void filterFieldsInternal(final String fieldsStr,
-	    final List<T> clubs, final String separator) {
+	    final List<T> instances, final String separator) {
 	try {
 	    // Avoid that null's on BigDecimal fields throws and exception with
 	    // Apache Utils.
@@ -85,7 +85,7 @@ public final class FieldsFilter {
 	    // We need to get the type of the T, so we get the first element and
 	    // create an instance to retrieve all the
 	    // fields.
-	    classFields = BeanUtils.describe(clubs.get(0).getClass()
+	    classFields = BeanUtils.describe(instances.get(0).getClass()
 		    .newInstance());
 	    final int initialFieldCount = classFields.size();
 
@@ -101,8 +101,8 @@ public final class FieldsFilter {
 	    // If the size is different you have fields to set to null, if is
 	    // the same no property will be removed.
 	    if (initialFieldCount != classFields.size()) {
-		for (final T cdDto : clubs) {
-		    checkNullFields(classFields, cdDto);
+		for (final T instance : instances) {
+		    checkNullFields(classFields, instance);
 		}
 	    }
 	} catch (final Exception e) {
