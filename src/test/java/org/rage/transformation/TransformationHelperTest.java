@@ -22,6 +22,8 @@ public class TransformationHelperTest {
 		dummyList.add(new DummyVO(2, "you", "youpassword"));
 
 		dummyVo = new DummyVO(1, "someusername", "somepássword");
+		
+		System.setProperty("rage.log.enabled", "true");
 	}
 
 	/**
