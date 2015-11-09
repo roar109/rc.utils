@@ -13,7 +13,7 @@ Nullify the fields in an POJO array that we don't want to, i.e.:
     
     FieldsFilter.filterFields(fields, array, separator)
 
-`array` values with only the `name` and `email` fields will have values.
+`array` object values is going to have with the `name` and `email` filled, other will be empty.
 
 ###  org.rage.transformation.TransformationHelper 
 
@@ -30,11 +30,13 @@ POJO:
     	... setters and getters
     }
 
-Output:
+Run:
 
-Map<String, Map<String, Object>:
+    Map<String, Map<String, Object> map = org.rage.transformation.TransformationHelper.transformObjectToMap(new DummyVO(1,"someusername","someemail"));
 
-    {id={value=1, type=java.lang.Integer}, username={value=someusername, type=java.lang.String}, email={value=somepássword, type=java.lang.String}}
+System out of the map variable:
+
+    {id={value=1, type=java.lang.Integer}, username={value=someusername, type=java.lang.String}, email={value=someemail, type=java.lang.String}}
 
 Format:
 
@@ -47,7 +49,9 @@ Format:
     				value : "field value 2 as string",
     				type : "java.lang.Class",
     				dateFormat : "date format type used if is a date",
-    				eType : "java.lang.class of the List<E> in case this field is a list"
+    				eType : "java.lang.Class of the  raw List<E> type in case this field is a list"
     			}
     ...
     }
+
+This is recursive, if we have a pojo inside other pojo, this will describe it too, so the "value"  could be string|Map|List as possible values
