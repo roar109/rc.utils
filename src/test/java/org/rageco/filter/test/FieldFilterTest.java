@@ -1,6 +1,3 @@
-/*
- * Copyright 2000 - 2008 24 Hour Fitness. All rights reserved.
- */
 package org.rageco.filter.test;
 
 
@@ -19,8 +16,7 @@ import java.util.List;
 /**
  * FieldFilterTest represents ...
  * 
- * @author <a href="mailto:roar109@gmail.com">Hector Mendoza</a>
- * @version $Id$
+ * @author hector.mendoza
  * @since Jun 3, 2014
  * 
  */

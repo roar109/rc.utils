@@ -1,14 +1,10 @@
-/*
- * Copyright 2000 - 2008 24 Hour Fitness. All rights reserved.
- */
 package org.rageco.data;
 
 
 /**
  * DummyVO represents ...
  * 
- * @author <a href="mailto:roar109@gmail.com">Hector Mendoza</a>
- * @version $Id$
+ * @author hector.mendoza
  * @since Jun 3, 2014
  * 
  */
