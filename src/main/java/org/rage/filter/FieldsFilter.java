@@ -1,4 +1,4 @@
-package org.rageco.filter;
+package org.rage.filter;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.BeanUtilsBean;

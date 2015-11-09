@@ -7,8 +7,8 @@ import java.util.Map;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.rageco.data.DummyVO;
-import org.rageco.transformation.TransformationHelper;
+import org.rage.data.DummyVO;
+import org.rage.transformation.TransformationHelper;
 
 public class TransformationHelperTest {
 

@@ -1,4 +1,4 @@
-package org.rageco.filter.test;
+package org.rage.filter.test;
 
 
 import static org.junit.Assert.assertEquals;
@@ -6,8 +6,8 @@ import static org.junit.Assert.assertNull;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.rageco.data.DummyVO;
-import org.rageco.filter.FieldsFilter;
+import org.rage.data.DummyVO;
+import org.rage.filter.FieldsFilter;
 
 import java.util.ArrayList;
 import java.util.List;

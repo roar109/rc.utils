@@ -1,4 +1,4 @@
-package org.rageco.data;
+package org.rage.data;
 
 
 /**
