@@ -13,11 +13,11 @@ Nullify the fields in an POJO array that we don't want to, i.e.:
     
     FieldsFilter.filterFields(fields, array, separator)
 
-`array` object values is going to have with the `name` and `email` filled, other will be empty.
+The `array` values have the `name` and `email` properties filled, other properties will be empty.
 
 ###  org.rage.transformation.TransformationHelper 
 
-Converts any java object that follow the java beans convention to a Map<String, Map<String, Object> approach
+Converts any java object that follow the java beans convention to a Map<String, Map<String, Object> approach.
 
 POJO:
 
@@ -34,7 +34,7 @@ Run:
 
     Map<String, Map<String, Object> map = org.rage.transformation.TransformationHelper.transformObjectToMap(new DummyVO(1,"someusername","someemail"));
 
-System out of the map variable:
+Log output of the `map` variable:
 
     {id={value=1, type=java.lang.Integer}, username={value=someusername, type=java.lang.String}, email={value=someemail, type=java.lang.String}}
 
